@@ -6,7 +6,61 @@
     <title>Fintech</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    
+<body class="h-screen w-screen bg-blue-600 flex items-center justify-center  text-slate-700 p-4">
+    <form class="bg-white w-full max-w-md p-8 rounded-2xl" method="post">
+        <div class="flex items-center justify-between mb-18">
+            <div class="flex flex-col gap-2">
+                <h1 class="text-4xl font-bold">Fintech</h1>
+                <p>Suas finanças organizadas</p>
+            </div>
+
+            <div class="w-12 h-12">
+                <img src="./images/piggy-bank-solid.png" alt="ícone logo" class="-scale-x-100">
+            </div>
+        </div>
+
+
+        <fieldset>
+            <legend class="hidden">Dados do Login</legend>
+
+            <label for="email">E-mail:</label>
+
+            <div class="relative mb-2.5">
+                <img src="./images/envelope-solid-full.svg"
+                    class="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 opacity-30" />
+
+                <input type="email" name="email" placeholder="Digite seu email..."
+                    class="w-full rounded-lg border-0 px-10 py-2 bg-slate-100 text-slate-600 text-[1rem]" />
+            </div>
+
+            <label for="password">Senha:</label>
+
+            <div class="relative">
+                <img src="./images/lock-solid-full.svg" class="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 opacity-30"
+                    alt="ícone da senha" />
+
+                <button
+                    class="absolute right-3 top-1/2 h-5 w-5 -translate-y-1/2 opacity-35 hover:opacity-10 hover:cursor-pointer">
+                    <img src="./images/eye-solid.png" alt="ícone de mostrar senha" />
+                </button>
+
+                <input type="password" name="password" placeholder="Digite sua senha..."
+                    class="w-full rounded-lg border-0 px-10 py-2 bg-slate-100 text-slate-600 text-[1rem]" />
+            </div>
+        </fieldset>
+
+        <div class="w-full flex justify-end mb-18 mt-3">
+            <a class="font-medium text-sm" href="#">Esqueci minha senha</a>
+        </div>
+
+        <button class="w-full bg-blue-600 hover:bg-blue-500 hover:cursor-pointer p-2.5 rounded-md text-white font-bold"
+            type="submit">
+            Entrar
+        </button>
+
+        <div class="w-full flex justify-center mt-3 ">
+            <a href="#">Não tem uma conta? <span class="font-bold text-blue-600 hover:text-blue-500">Cadastre-se</span></a>
+        </div>
+    </form>
 </body>
 </html>
